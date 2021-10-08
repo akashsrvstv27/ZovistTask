@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Store</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            
+            <img src="assets/logo.png" class="logo">
+             <img src="assets/profile.jpg" class="profile-icon">
+
+        </div>
+        <div class="section">
+            <div class="nav">
+                <div class="nav-items-left">
+                    <div class="nav-item"><a href="index.html">Factory</a></div>
+                    <div class="nav-item"><a href="index.html">Store</a></div>
+                    <div class="nav-item"><a href="index.html">Product</a></div>
+                </div>
+                <div class="nav-items-right">
+                    <div class="nav-item-title"><a href="index.html">Vendor Portal</a></div>
+                </div>
+                
+            </div>
+            <div class="content">
+                <div class="block1">
+                    <div class="block1-title">
+                        <h4 style="font-size: 18px;">PRODUCTS LIST</h4>
+                    </div>
+                    <div class="products-list">
+                        <div class="product1"><button id="myBtn1" class="Btn"><div class="Oval"><img src="assets/edit.png"></div><button></div>
+                        <div class="product2"><button id="myBtn2" class="Btn"><div class="Oval"><img src="assets/edit.png"></div><button></div>
+                        <div class="product3"><button id="myBtn3" class="Btn"><div class="Oval"><img src="assets/edit.png"></div><button></div>
+                        <div class="product4"><button id="myBtn4" class="Btn"><div class="Oval"><img src="assets/edit.png"></div><button></div>
+                        <div class="product5"><button id="myBtn5" class="Btn"><div class="Oval"><img src="assets/edit.png"></div><button></div>
+                        <div class="product6"><button id="myBtn6" class="Btn"><div class="Oval"><img src="assets/edit.png"></div><button></div>
+                    </div>
+                    <div class="block-footer">
+                        <i class="fa fa-arrow-circle-left" style="font-size:48px;color:rgb(51, 51, 51)"></i>
+                        <i class="fa fa-arrow-circle-right" style="font-size:48px;color:rgb(51, 51, 51)"></i>
+                    </div>
+                </div>
+                <div class="block2">
+                    <div class="block1-title">
+                        <h4 style="font-size: 18px;">ADD NEW PRODUCT</h4>
+                        <form>
+                            <label for="name" class="name">Product Name</label><br/>
+                            <input type="text" placeholder="Burrito Product" class="name-input">
+                            <br><br>
+                            <label for="name" class="name">Upload video File or</label><br/>
+                            <input type="text" placeholder="Paste URL here" class="url-input"> &nbsp;&nbsp;OR&nbsp;&nbsp; 
+                            <button class="video-file-button">Upload video file &nbsp;&nbsp;<img src="assets/video-player.png"
+                                srcset="img/video-player@2x.png 2x,
+                                        img/video-player@3x.png 3x"
+                                class="video-player"></button> 
+                            
+                            <div class="upload-buttons">
+                                <button class="image-file-button">Upload product image<br><br><img src="assets/camera.png"></button>
+                                <button class="d-file-button">Upload 3D file (optional)<br><br><img src="assets/cube.png"></button>
+                                <button class="more-files-button" style="margin-top: 30px;">Upload additional files<br><br><img src="assets/document.png"></button>
+                            </div>
+
+                            <label for="name" class="name">Product URL</label><br/>
+                            <input type="text" placeholder="https://elearnmagazine.com/predictive-analytics-learning-analitycs/" class="name-input">
+                            <button class="submit-button" style="margin-top: 30px;">SUBMIT</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">CANCEL</span>
+              <p class="modal-heading">EDIT PRODUCT</p>
+              <form>
+                <label for="name" class="name">Product Name</label><br/>
+                <input type="text" placeholder="Burrito Product" class="name-input">
+                <br><br> 
+                
+                <div class="logo-and-video">
+                    <div class="logo-image">
+                        <label for="name" class="name">Product Logo</label><br/>
+                        <img src="assets/burger1.jpg" height="110" width="100" class="product-image">
+                        
+                    </div>
+                    <div class="logo-video">
+                        <label for="name" class="name">Product Video</label><br/>
+                        <img src="assets/burger1.jpg" height="110" width="100" class="product-video">
+                        <img src="assets/video-icon.png" height="30" width="30"  class="video-icon"/>
+                        
+                    </div>
+                </div><br>
+
+                <div class="additonal-files">
+                    <label for="name" class="name">Additional Files</label><br/>
+                    <div class="file-types">
+                        <div class="file">
+                            <img src="assets/pdf.png" height="110" width="100">
+                            <p style="background-color:rgba(0, 0, 0, 0.6); color: white;font-size: 12px;padding: 5px;">burger.pdf(28KB)</p>
+                        </div>
+                        <div class="file">
+                            <img src="assets/doc.png"  height="110" width="100">
+                            <p style="background-color:rgba(0, 0, 0, 0.6); color: white;font-size: 12px;padding: 5px;">burger.doc(180KB)</p>
+                        </div>
+                        <div class="file">
+                            <button class="add-files"><i class="fa fa-plus-circle" aria-hidden="true" style="font-size: 130px;box-shadow: 0 2px 11px -3px rgba(0, 0, 0, 0.54);
+                            background-color: #1b8d97 ; color:white; padding: 2px;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+
+                <label for="name" class="name">Product URL</label><br/>
+                <input type="text" placeholder="https://elearnmagazine.com/predictive-analytics-learning-analitycs/" class="name-input">
+                <button class="submit-button" style="margin-top: 30px;">SAVE</button>
+
+            </form>
+            </div>
+          
+          </div>
+
+
+          <script>
+            
+            var modal = document.getElementById("myModal");
+            
+            var btn1 = document.getElementById("myBtn1");
+            var btn2 = document.getElementById("myBtn2");
+            var btn3 = document.getElementById("myBtn3");
+            var btn4 = document.getElementById("myBtn4");
+            var btn5 = document.getElementById("myBtn5");
+            var btn6 = document.getElementById("myBtn6");
+            
+            var span = document.getElementsByClassName("close")[0];
+            
+            btn1.onclick = function() {
+              modal.style.display = "block";
+            }
+            btn2.onclick = function() {
+              modal.style.display = "block";
+            }
+            btn3.onclick = function() {
+              modal.style.display = "block";
+            }
+            btn4.onclick = function() {
+              modal.style.display = "block";
+            }
+            btn5.onclick = function() {
+              modal.style.display = "block";
+            }
+            btn6.onclick = function() {
+              modal.style.display = "block";
+            }
+            
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+            </script>
+    </body>
+</html>
